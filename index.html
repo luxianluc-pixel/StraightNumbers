@@ -2,34 +2,68 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>StraightNumbers</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/style.css">
+<title>StraightNumbers — UK accounting &amp; Making Tax Digital software</title>
+<meta name="description" content="StraightNumbers is local-first UK accounting and Making Tax Digital (MTD) software for Income Tax, VAT and CIS.">
+<style>
+  :root { --acc:#2f6df6; --ink:#16181d; --muted:#5b6470; --line:#e6e8ec; --bg:#ffffff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#f6f7f9; color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 22px 80px; }
+  header { border-bottom:1px solid var(--line); padding-bottom:22px; margin-bottom:34px; }
+  .brand { font-size:26px; font-weight:800; letter-spacing:.5px; }
+  .brand span { color:var(--acc); }
+  h1 { font-size:30px; letter-spacing:-.5px; margin:18px 0 6px; }
+  .meta { color:var(--muted); font-size:13.5px; }
+  h2 { font-size:18px; margin:30px 0 8px; }
+  p, li { color:#23272e; }
+  a { color:var(--acc); }
+  ul { padding-left:20px; }
+  .card { background:var(--bg); border:1px solid var(--line); border-radius:14px; padding:8px 30px 30px; box-shadow:0 1px 2px rgba(20,24,29,.04); }
+  .lead { font-size:17.5px; color:#23272e; }
+  .links { margin-top:26px; padding-top:20px; border-top:1px solid var(--line); font-size:14.5px; }
+  .links a { margin-right:18px; }
+  footer { color:var(--muted); font-size:13px; margin-top:30px; text-align:center; }
+  .note { background:#f0f5ff; border:1px solid #d6e2ff; border-radius:10px; padding:12px 16px; font-size:14px; color:#2a3b63; margin-top:24px; }
+</style>
 </head>
 <body>
-<div id="topbar">
-  <div id="logo">Straight<span>Numbers</span></div>
-  <div id="client-search-wrap">
-    <input id="client-search" placeholder="🔍 Find client / person…" aria-label="Find client or person" autocomplete="off">
-    <div id="client-search-panel"></div>
+<div class="wrap">
+  <header>
+    <div class="brand">Straight<span>Numbers</span></div>
+  </header>
+  <div class="card">
+    <h1>UK accounting &amp; Making Tax Digital software</h1>
+    <p class="meta">Sole-trader software provider · United Kingdom</p>
+
+    <p class="lead">StraightNumbers is local-first accounting and Making Tax Digital (MTD) software that helps individuals and their agents keep digital records and submit UK tax directly to HMRC.</p>
+
+    <h2>What the software does</h2>
+    <ul>
+      <li><strong>Making Tax Digital for Income Tax (MTD ITSA):</strong> digital record keeping, quarterly updates and final declaration for self-employment and UK &amp; foreign property income.</li>
+      <li><strong>VAT (MTD):</strong> keep VAT records and submit VAT returns, with the "Check a UK VAT number" service built in.</li>
+      <li><strong>Construction Industry Scheme (CIS):</strong> record and reconcile CIS deductions.</li>
+      <li><strong>Bookkeeping:</strong> invoices, expenses, contacts and a chart of accounts that feed the figures submitted to HMRC.</li>
+    </ul>
+
+    <h2>Local-first by design</h2>
+    <p>StraightNumbers runs on your own machine. Your business and client records stay in local databases on that machine — there is no central server holding your data. Figures are transmitted only when you choose to submit them to HMRC, under your own authorisation, over a secure connection.</p>
+
+    <h2>Security &amp; data protection</h2>
+    <p>Access is protected by a password stored only as a one-way cryptographic hash. Your data is encrypted at rest, and credentials used to connect to HMRC are encrypted at rest. You can export all of your records at any time in a machine-readable format, and the software collects no analytics and performs no tracking.</p>
+
+    <h2>Contact</h2>
+    <p>StraightNumbers is provided by a sole-trader software developer in the United Kingdom. Questions, support requests and security reports can be raised at <strong>luxianluc@gmail.com</strong> (put "SECURITY" in the subject line for security reports).</p>
+
+    <div class="links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+    </div>
+
+    <p class="note">StraightNumbers is software that helps you keep digital records and submit UK tax. It does not provide tax, accounting or legal advice; figures and estimates shown are indicative — confirm with a qualified accountant.</p>
   </div>
-  <div id="client-tabs"></div>
-  <button id="btn-add-client" title="Add client">+ Client</button>
-  <a href="/howto.html" target="_blank" id="btn-howto" title="Help — user guide &amp; FAQ" aria-label="Help — user guide and FAQ" style="text-decoration:none;color:var(--muted);font-size:17px;padding:6px 8px">?</a>
-  <button id="btn-app-settings" title="App settings" aria-label="App settings">⚙</button>
+  <footer>StraightNumbers · UK accounting &amp; Making Tax Digital software</footer>
 </div>
-<div id="workspace">
-  <nav id="sidebar"></nav>
-  <main id="main"></main>
-</div>
-<div id="modal-bg"><div id="modal"></div></div>
-<div id="toast"></div>
-<script src="/app.js"></script>
-<script src="/optimiser.js"></script>
-<script src="/legwatch.js"></script>
-<script src="/lock.js"></script>
-<script src="/deadlines.js"></script>
-<script src="/taxhelp.js"></script>
-<script src="/a11y.js"></script>
 </body>
 </html>
