@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>StraightNumbers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="topbar">
+  <div id="logo">Straight<span>Numbers</span></div>
+  <div id="client-search-wrap">
+    <input id="client-search" placeholder="🔍 Find client / person…" aria-label="Find client or person" autocomplete="off">
+    <div id="client-search-panel"></div>
+  </div>
+  <div id="client-tabs"></div>
+  <button id="btn-add-client" title="Add client">+ Client</button>
+  <a href="/howto.html" target="_blank" id="btn-howto" title="Help — user guide &amp; FAQ" aria-label="Help — user guide and FAQ" style="text-decoration:none;color:var(--muted);font-size:17px;padding:6px 8px">?</a>
+  <button id="btn-app-settings" title="App settings" aria-label="App settings">⚙</button>
+</div>
+<div id="workspace">
+  <nav id="sidebar"></nav>
+  <main id="main"></main>
+</div>
+<div id="modal-bg"><div id="modal"></div></div>
+<div id="toast"></div>
+<script src="/app.js"></script>
+<script src="/optimiser.js"></script>
+<script src="/legwatch.js"></script>
+<script src="/lock.js"></script>
+<script src="/deadlines.js"></script>
+<script src="/taxhelp.js"></script>
+<script src="/a11y.js"></script>
+</body>
+</html>
